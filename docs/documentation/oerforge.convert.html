@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>convert.py - OER-Forge Content Converter</title>
-<link href="static/images/favicon.ico" rel="icon"/>
-<link href="../css/theme-dark.css" id="theme-css" rel="stylesheet"/>
-<script defer="" src="../js/main.js"></script>
-<!-- Favicons and Mobile Icons -->
-<link href="/static/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/static/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/static/images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/static/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
-<link href="/static/images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+  <meta charset="UTF-8">
+  <title>convert.py - OER-Forge Content Converter</title>
+  
+  <link rel="icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="../css/theme-dark.css" id="theme-css">
+  <script src="../js/main.js" defer></script>
+  <!-- Favicons and Mobile Icons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/static/images/android-chrome-512x512.png">
+  <!-- Web Manifest (optional, for PWA) -->
+  <link rel="manifest" href="/static/images/site.webmanifest">
+  <!-- Open Graph Meta Tags for Sharing -->
+  <meta property="og:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta property="og:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta property="og:image" content="/static/images/logo.png">
+  <meta property="og:url" content="https://open-physics-ed-org.github.io/oer-forge">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta name="twitter:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta name="twitter:image" content="/static/images/logo.png">
 </head>
 <body>
-<header class="site-header">
-<div class="header-flex">
-<img alt="Site Logo" class="site-logo" src="../images/logo.png"/>
-<div class="header-titles">
-<h1 class="site-title">OER-Forge: Documentation</h1>
-<h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
-</div>
-<!-- Theme toggle button moved to main content container in baseof.html -->
-</div>
-<nav aria-label="Main menu" class="site-nav" role="navigation">
-<ul class="nav-menu">
-<li><a href="../index.html">Home</a></li>
-<li><a href="../news-roll/index.html">News</a></li>
-<li><a href="../sample-resources/index.html">Example</a></li>
-<li><a href="index.html">Docs</a></li>
-<li><a href="../about/index.html">About</a></li>
-</ul>
-</nav>
+  <header class="site-header">
+  <div class="header-flex">
+    <img src="../images/logo.png" alt="Site Logo" class="site-logo" />
+    <div class="header-titles">
+      <h1 class="site-title">OER-Forge: Documentation</h1>
+      <h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
+    </div>
+    <!-- Theme toggle button moved to main content container in baseof.html -->
+  </div>
+  <nav class="site-nav" role="navigation" aria-label="Main menu">
+    <ul class="nav-menu">
+      
+        <li><a href="../index.html">Home</a></li>
+      
+        <li><a href="../news-roll/index.html">News</a></li>
+      
+        <li><a href="../sample-resources/index.html">Example</a></li>
+      
+        <li><a href="index.html">Docs</a></li>
+      
+        <li><a href="../about/index.html">About</a></li>
+      
+    </ul>
+  </nav>
 </header>
-<main id="main-content" tabindex="-1">
-<div class="container">
-<button aria-label="Switch theme" class="theme-toggle" id="theme-toggle">🌙
+  <main id="main-content" tabindex="-1">
+    <div class="container">
+      <button id="theme-toggle" aria-label="Switch theme" class="theme-toggle">🌙
         <span class="visually-hidden">Toggle dark/light theme</span>
-</button>
-<span id="accessibility-report-placeholder"></span><a aria-label="View Accessibility Report" class="wcag-badge wcag-badge-error" data-accessibility-report-btn="1" href="wcag_report_oerforge.convert.html"><img alt="WCAG WCAG22AAA Conformance Logo" src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA-blue.svg" style="height:2em;vertical-align:middle;"/></a>
-<article>
-<nav aria-label="Download options" class="download-nav" role="navigation">
-<a aria-label="Download as PDF" class="download-btn theme-download-pdf" href="../files/documentation/oerforge.convert.pdf" role="button">
+      </button>
+      <span id="accessibility-report-placeholder"></span>
+      
+  <article>
+    
+    <nav class="download-nav" role="navigation" aria-label="Download options">
+      
+        <a href="../files/documentation/oerforge.convert.pdf"
+           class="download-btn theme-download-pdf"
+           role="button"
+           aria-label="Download as PDF">
           PDF
         </a>
-<a aria-label="Download as Word" class="download-btn theme-download-docx" href="../files/documentation/oerforge.convert.docx" role="button">
+      
+        <a href="../files/documentation/oerforge.convert.docx"
+           class="download-btn theme-download-docx"
+           role="button"
+           aria-label="Download as Word">
           Word
         </a>
-<a aria-label="Download as LaTeX" class="download-btn theme-download-tex" href="../files/documentation/oerforge.convert.tex" role="button">
+      
+        <a href="../files/documentation/oerforge.convert.tex"
+           class="download-btn theme-download-tex"
+           role="button"
+           aria-label="Download as LaTeX">
           LaTeX
         </a>
-<a aria-label="Download as Markdown" class="download-btn theme-download-md" href="../files/documentation/oerforge.convert.md" role="button">
+      
+        <a href="../files/documentation/oerforge.convert.md"
+           class="download-btn theme-download-md"
+           role="button"
+           aria-label="Download as Markdown">
           Markdown
         </a>
-<a aria-label="Download as Plain Text" class="download-btn theme-download-txt" href="../files/documentation/oerforge.convert.txt" role="button">
+      
+        <a href="../files/documentation/oerforge.convert.txt"
+           class="download-btn theme-download-txt"
+           role="button"
+           aria-label="Download as Plain Text">
           Plain Text
         </a>
-</nav>
-<h1>convert.py - OER-Forge Content Converter</h1>
-<p>Content Conversion Utilities for OERForge</p>
-<hr/>
+      
+    </nav>
+    
+    <h1>convert.py - OER-Forge Content Converter</h1>
+    
+    <p>Content Conversion Utilities for OERForge</p>
+<hr />
 <h2>Overview</h2>
 <p><code>oerforge.convert</code> provides functions for converting Jupyter notebooks (<code>.ipynb</code>) and Markdown files to various formats, managing associated images, and updating a SQLite database with conversion status. It supports batch and single-file conversion, image extraction and copying, and database logging.</p>
-<hr/>
+<hr />
 <h2>Functions</h2>
 <h3>setup_logging</h3>
 <pre><code class="language-python">def setup_logging()
 </code></pre>
 <p>Configure logging for conversion actions. Logs to <code>log/export.log</code> and the console.</p>
-<hr/>
+<hr />
 <h3>query_images_for_content</h3>
 <pre><code class="language-python">def query_images_for_content(content_record, conn)
 </code></pre>
@@ -84,7 +127,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of image records.</li>
 </ul>
-<hr/>
+<hr />
 <h3>copy_images_to_build</h3>
 <pre><code class="language-python">def copy_images_to_build(images, images_root=IMAGES_ROOT, conn=None)
 </code></pre>
@@ -99,7 +142,7 @@
 <ul role="list">
 <li role="listitem"><code>list[str]</code>: List of copied image paths.</li>
 </ul>
-<hr/>
+<hr />
 <h3>update_markdown_image_links</h3>
 <pre><code class="language-python">def update_markdown_image_links(md_path, images, images_root=IMAGES_ROOT)
 </code></pre>
@@ -110,7 +153,7 @@
 <li role="listitem"><code>images</code> (list[dict]): List of image records.</li>
 <li role="listitem"><code>images_root</code> (str): Images directory.</li>
 </ul>
-<hr/>
+<hr />
 <h3>handle_images_for_markdown</h3>
 <pre><code class="language-python">def handle_images_for_markdown(content_record, conn)
 </code></pre>
@@ -120,7 +163,7 @@
 <li role="listitem"><code>content_record</code> (dict): Content record dictionary.</li>
 <li role="listitem"><code>conn</code>: SQLite connection object.</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_md_to_docx</h3>
 <pre><code class="language-python">def convert_md_to_docx(src_path, out_path, record_id=None, conn=None)
 </code></pre>
@@ -132,7 +175,7 @@
 <li role="listitem"><code>record_id</code> (int, optional): Content record ID.</li>
 <li role="listitem"><code>conn</code>: SQLite connection object (optional).</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_md_to_pdf</h3>
 <pre><code class="language-python">def convert_md_to_pdf(src_path, out_path, record_id=None, conn=None)
 </code></pre>
@@ -144,7 +187,7 @@
 <li role="listitem"><code>record_id</code> (int, optional): Content record ID.</li>
 <li role="listitem"><code>conn</code>: SQLite connection object (optional).</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_md_to_tex</h3>
 <pre><code class="language-python">def convert_md_to_tex(src_path, out_path, record_id=None, conn=None)
 </code></pre>
@@ -156,7 +199,7 @@
 <li role="listitem"><code>record_id</code> (int, optional): Content record ID.</li>
 <li role="listitem"><code>conn</code>: SQLite connection object (optional).</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_md_to_txt</h3>
 <pre><code class="language-python">def convert_md_to_txt(src_path, out_path, record_id=None, conn=None)
 </code></pre>
@@ -168,7 +211,7 @@
 <li role="listitem"><code>record_id</code> (int, optional): Content record ID.</li>
 <li role="listitem"><code>conn</code>: SQLite connection object (optional).</li>
 </ul>
-<hr/>
+<hr />
 <h3>batch_convert_all_content</h3>
 <pre><code class="language-python">def batch_convert_all_content(config_path=None)
 </code></pre>
@@ -177,12 +220,12 @@
 <ul role="list">
 <li role="listitem"><code>config_path</code> (str, optional): Path to <code>_content.yml</code> config file.</li>
 </ul>
-<hr/>
+<hr />
 <h2>CLI Usage</h2>
 <pre><code class="language-bash">python convert.py batch
 python convert.py single --src &lt;source&gt; --out &lt;output&gt; --fmt &lt;format&gt; [--record_id &lt;id&gt;]
 </code></pre>
-<hr/>
+<hr />
 <h2>Requirements</h2>
 <ul role="list">
 <li role="listitem">Python 3.7+</li>
@@ -191,21 +234,23 @@ python convert.py single --src &lt;source&gt; --out &lt;output&gt; --fmt &lt;for
 <li role="listitem">markdown-it-py</li>
 <li role="listitem">SQLite3</li>
 </ul>
-<hr/>
+<hr />
 <h2>See Also</h2>
 <ul role="list">
 <li role="listitem"><a href="https://pandoc.org/">Pandoc Documentation</a></li>
 <li role="listitem"><a href="https://nbconvert.readthedocs.io/en/latest/">nbconvert Documentation</a></li>
 </ul>
-<hr/>
+<hr />
 <h2>License</h2>
 <p>See <code>LICENSE</code> in the project root.</p>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</article>
-</div>
-</main>
-<footer>
+  </article>
+
+    </div>
+  </main>
+  <footer>
   Made with tons of ☕️  and lots of ❤️ for students and educators everywhere. | Built with <a href="https://github.com/OER-Forge/">OER Forge</a>
+
 </footer>
 </body>
 </html>

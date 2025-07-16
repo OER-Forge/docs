@@ -5,6 +5,7 @@
 !requirements.txt
 !content/
 !docs/
+!layouts/
 !static/
 
 # OER-Forge files
@@ -14,7 +15,6 @@ pa11y.py
 # OER-Forge directories
 build/
 db/
-layouts/
 log/
 oerforge/
 oerforge_admin/

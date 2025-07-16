@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>make.py - OER-Forge Static Site Generator</title>
-<link href="static/images/favicon.ico" rel="icon"/>
-<link href="../css/theme-dark.css" id="theme-css" rel="stylesheet"/>
-<script defer="" src="../js/main.js"></script>
-<!-- Favicons and Mobile Icons -->
-<link href="/static/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/static/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/static/images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/static/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
-<link href="/static/images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+  <meta charset="UTF-8">
+  <title>make.py - OER-Forge Static Site Generator</title>
+  
+  <link rel="icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="../css/theme-dark.css" id="theme-css">
+  <script src="../js/main.js" defer></script>
+  <!-- Favicons and Mobile Icons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/static/images/android-chrome-512x512.png">
+  <!-- Web Manifest (optional, for PWA) -->
+  <link rel="manifest" href="/static/images/site.webmanifest">
+  <!-- Open Graph Meta Tags for Sharing -->
+  <meta property="og:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta property="og:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta property="og:image" content="/static/images/logo.png">
+  <meta property="og:url" content="https://open-physics-ed-org.github.io/oer-forge">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta name="twitter:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta name="twitter:image" content="/static/images/logo.png">
 </head>
 <body>
-<header class="site-header">
-<div class="header-flex">
-<img alt="Site Logo" class="site-logo" src="../images/logo.png"/>
-<div class="header-titles">
-<h1 class="site-title">OER-Forge: Documentation</h1>
-<h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
-</div>
-<!-- Theme toggle button moved to main content container in baseof.html -->
-</div>
-<nav aria-label="Main menu" class="site-nav" role="navigation">
-<ul class="nav-menu">
-<li><a href="../index.html">Home</a></li>
-<li><a href="../news-roll/index.html">News</a></li>
-<li><a href="../sample-resources/index.html">Example</a></li>
-<li><a href="index.html">Docs</a></li>
-<li><a href="../about/index.html">About</a></li>
-</ul>
-</nav>
+  <header class="site-header">
+  <div class="header-flex">
+    <img src="../images/logo.png" alt="Site Logo" class="site-logo" />
+    <div class="header-titles">
+      <h1 class="site-title">OER-Forge: Documentation</h1>
+      <h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
+    </div>
+    <!-- Theme toggle button moved to main content container in baseof.html -->
+  </div>
+  <nav class="site-nav" role="navigation" aria-label="Main menu">
+    <ul class="nav-menu">
+      
+        <li><a href="../index.html">Home</a></li>
+      
+        <li><a href="../news-roll/index.html">News</a></li>
+      
+        <li><a href="../sample-resources/index.html">Example</a></li>
+      
+        <li><a href="index.html">Docs</a></li>
+      
+        <li><a href="../about/index.html">About</a></li>
+      
+    </ul>
+  </nav>
 </header>
-<main id="main-content" tabindex="-1">
-<div class="container">
-<button aria-label="Switch theme" class="theme-toggle" id="theme-toggle">🌙
+  <main id="main-content" tabindex="-1">
+    <div class="container">
+      <button id="theme-toggle" aria-label="Switch theme" class="theme-toggle">🌙
         <span class="visually-hidden">Toggle dark/light theme</span>
-</button>
-<span id="accessibility-report-placeholder"></span><a aria-label="View Accessibility Report" class="wcag-badge wcag-badge-error" data-accessibility-report-btn="1" href="wcag_report_oerforge.make.html"><img alt="WCAG WCAG22AAA Conformance Logo" src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA-blue.svg" style="height:2em;vertical-align:middle;"/></a>
-<article>
-<nav aria-label="Download options" class="download-nav" role="navigation">
-<a aria-label="Download as PDF" class="download-btn theme-download-pdf" href="../files/documentation/oerforge.make.pdf" role="button">
+      </button>
+      <span id="accessibility-report-placeholder"></span>
+      
+  <article>
+    
+    <nav class="download-nav" role="navigation" aria-label="Download options">
+      
+        <a href="../files/documentation/oerforge.make.pdf"
+           class="download-btn theme-download-pdf"
+           role="button"
+           aria-label="Download as PDF">
           PDF
         </a>
-<a aria-label="Download as Word" class="download-btn theme-download-docx" href="../files/documentation/oerforge.make.docx" role="button">
+      
+        <a href="../files/documentation/oerforge.make.docx"
+           class="download-btn theme-download-docx"
+           role="button"
+           aria-label="Download as Word">
           Word
         </a>
-<a aria-label="Download as LaTeX" class="download-btn theme-download-tex" href="../files/documentation/oerforge.make.tex" role="button">
+      
+        <a href="../files/documentation/oerforge.make.tex"
+           class="download-btn theme-download-tex"
+           role="button"
+           aria-label="Download as LaTeX">
           LaTeX
         </a>
-<a aria-label="Download as Markdown" class="download-btn theme-download-md" href="../files/documentation/oerforge.make.md" role="button">
+      
+        <a href="../files/documentation/oerforge.make.md"
+           class="download-btn theme-download-md"
+           role="button"
+           aria-label="Download as Markdown">
           Markdown
         </a>
-<a aria-label="Download as Plain Text" class="download-btn theme-download-txt" href="../files/documentation/oerforge.make.txt" role="button">
+      
+        <a href="../files/documentation/oerforge.make.txt"
+           class="download-btn theme-download-txt"
+           role="button"
+           aria-label="Download as Plain Text">
           Plain Text
         </a>
-</nav>
-<h1>make.py - OER-Forge Static Site Generator</h1>
-<p>Hugo-style Markdown to HTML Static Site Generator (Python)</p>
-<hr/>
+      
+    </nav>
+    
+    <h1>make.py - OER-Forge Static Site Generator</h1>
+    
+    <p>Hugo-style Markdown to HTML Static Site Generator (Python)</p>
+<hr />
 <h2>Overview</h2>
 <p><code>oerforge.make</code> provides functions for building static HTML sites from Markdown using Jinja2 templates, asset management, navigation, and download button generation. It is inspired by Hugo and designed for clarity, maintainability, and extensibility.</p>
-<hr/>
+<hr />
 <h2>Functions</h2>
 <h3>copy_static_assets_to_build</h3>
 <pre><code class="language-python">def copy_static_assets_to_build()
 </code></pre>
 <p>Copy static assets (CSS, JS, images) from <code>static/</code> to <code>build/</code>. Overwrites files each time it is called.</p>
-<hr/>
+<hr />
 <h3>get_available_downloads_for_page</h3>
 <pre><code class="language-python">def get_available_downloads_for_page(rel_path, page_dir=None)
 </code></pre>
@@ -84,7 +127,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of available downloads with label, filename, href, theme, and aria_label.</li>
 </ul>
-<hr/>
+<hr />
 <h3>build_download_buttons_context</h3>
 <pre><code class="language-python">def build_download_buttons_context(rel_path, page_dir=None)
 </code></pre>
@@ -98,7 +141,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of button dictionaries for the template.</li>
 </ul>
-<hr/>
+<hr />
 <h3>slugify</h3>
 <pre><code class="language-python">def slugify(title: str) -&gt; str
 </code></pre>
@@ -111,7 +154,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Slugified string.</li>
 </ul>
-<hr/>
+<hr />
 <h3>load_yaml_config</h3>
 <pre><code class="language-python">def load_yaml_config(config_path: str) -&gt; dict
 </code></pre>
@@ -124,7 +167,7 @@
 <ul role="list">
 <li role="listitem"><code>dict</code>: Parsed configuration data.</li>
 </ul>
-<hr/>
+<hr />
 <h3>ensure_output_dir</h3>
 <pre><code class="language-python">def ensure_output_dir(md_path)
 </code></pre>
@@ -133,7 +176,7 @@
 <ul role="list">
 <li role="listitem"><code>md_path</code> (str): Path to the Markdown file.</li>
 </ul>
-<hr/>
+<hr />
 <h3>setup_template_env</h3>
 <pre><code class="language-python">def setup_template_env()
 </code></pre>
@@ -142,7 +185,7 @@
 <ul role="list">
 <li role="listitem"><code>jinja2.Environment</code>: Configured Jinja2 environment.</li>
 </ul>
-<hr/>
+<hr />
 <h3>render_page</h3>
 <pre><code class="language-python">def render_page(context: dict, template_name: str) -&gt; str
 </code></pre>
@@ -156,7 +199,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Rendered HTML string.</li>
 </ul>
-<hr/>
+<hr />
 <h3>generate_nav_menu</h3>
 <pre><code class="language-python">def generate_nav_menu(context: dict) -&gt; list
 </code></pre>
@@ -169,7 +212,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of menu item dictionaries.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_header_partial</h3>
 <pre><code class="language-python">def get_header_partial(context: dict) -&gt; str
 </code></pre>
@@ -182,7 +225,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Rendered header HTML.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_footer_partial</h3>
 <pre><code class="language-python">def get_footer_partial(context: dict) -&gt; str
 </code></pre>
@@ -195,7 +238,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Rendered footer HTML.</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_markdown_to_html</h3>
 <pre><code class="language-python">def convert_markdown_to_html(md_path: str) -&gt; str
 </code></pre>
@@ -208,7 +251,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Rendered HTML string.</li>
 </ul>
-<hr/>
+<hr />
 <h3>convert_markdown_to_html_text</h3>
 <pre><code class="language-python">def convert_markdown_to_html_text(md_text: str) -&gt; str
 </code></pre>
@@ -221,7 +264,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Rendered HTML string.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_asset_path</h3>
 <pre><code class="language-python">def get_asset_path(asset_type, asset_name, rel_path)
 </code></pre>
@@ -236,7 +279,7 @@
 <ul role="list">
 <li role="listitem"><code>str</code>: Relative asset path.</li>
 </ul>
-<hr/>
+<hr />
 <h3>add_asset_paths</h3>
 <pre><code class="language-python">def add_asset_paths(context, rel_path)
 </code></pre>
@@ -250,7 +293,7 @@
 <ul role="list">
 <li role="listitem"><code>dict</code>: Updated context dictionary.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_top_level_sections</h3>
 <pre><code class="language-python">def get_top_level_sections(db_path=None)
 </code></pre>
@@ -263,17 +306,17 @@
 <ul role="list">
 <li role="listitem"><code>list[tuple]</code>: List of (section_title, output_dir) tuples.</li>
 </ul>
-<hr/>
+<hr />
 <h3>build_section_indexes</h3>
 <pre><code class="language-python">def build_section_indexes()
 </code></pre>
 <p>Generate index.html files for all top-level sections using the section template.</p>
-<hr/>
+<hr />
 <h3>build_all_markdown_files</h3>
 <pre><code class="language-python">def build_all_markdown_files()
 </code></pre>
 <p>Build all Markdown files using Hugo-style rendering, using the first # header as the title.</p>
-<hr/>
+<hr />
 <h3>create_section_index_html</h3>
 <pre><code class="language-python">def create_section_index_html(section_title: str, output_dir: str, context: dict)
 </code></pre>
@@ -284,13 +327,13 @@
 <li role="listitem"><code>output_dir</code> (str): Output directory for the section index.</li>
 <li role="listitem"><code>context</code> (dict): Context dictionary for the template.</li>
 </ul>
-<hr/>
+<hr />
 <h2>Usage Example</h2>
 <pre><code class="language-python">from oerforge import make
 make.build_section_indexes()
 make.build_all_markdown_files()
 </code></pre>
-<hr/>
+<hr />
 <h2>Requirements</h2>
 <ul role="list">
 <li role="listitem">Python 3.7+</li>
@@ -300,21 +343,23 @@ make.build_all_markdown_files()
 <li role="listitem">PyYAML</li>
 <li role="listitem">SQLite3</li>
 </ul>
-<hr/>
+<hr />
 <h2>See Also</h2>
 <ul role="list">
 <li role="listitem"><a href="https://jinja.palletsprojects.com/">Jinja2 Documentation</a></li>
 <li role="listitem"><a href="https://markdown-it-py.readthedocs.io/">markdown-it-py Documentation</a></li>
 </ul>
-<hr/>
+<hr />
 <h2>License</h2>
 <p>See <code>LICENSE</code> in the project root.</p>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</article>
-</div>
-</main>
-<footer>
+  </article>
+
+    </div>
+  </main>
+  <footer>
   Made with tons of ☕️  and lots of ❤️ for students and educators everywhere. | Built with <a href="https://github.com/OER-Forge/">OER Forge</a>
+
 </footer>
 </body>
 </html>

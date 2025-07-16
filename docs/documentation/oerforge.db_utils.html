@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>db_utils.py — OER-Forge Database Utilities</title>
-<link href="static/images/favicon.ico" rel="icon"/>
-<link href="../css/theme-dark.css" id="theme-css" rel="stylesheet"/>
-<script defer="" src="../js/main.js"></script>
-<!-- Favicons and Mobile Icons -->
-<link href="/static/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/static/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/static/images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/static/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-<link href="/static/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
-<link href="/static/images/android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+  <meta charset="UTF-8">
+  <title>db_utils.py — OER-Forge Database Utilities</title>
+  
+  <link rel="icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="../css/theme-dark.css" id="theme-css">
+  <script src="../js/main.js" defer></script>
+  <!-- Favicons and Mobile Icons -->
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/static/images/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/static/images/android-chrome-512x512.png">
+  <!-- Web Manifest (optional, for PWA) -->
+  <link rel="manifest" href="/static/images/site.webmanifest">
+  <!-- Open Graph Meta Tags for Sharing -->
+  <meta property="og:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta property="og:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta property="og:image" content="/static/images/logo.png">
+  <meta property="og:url" content="https://open-physics-ed-org.github.io/oer-forge">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OER-Forge: WCAG-Compliant OER Build System">
+  <meta name="twitter:description" content="OER-Forge is a suite of tools to help authors create WCAG-compliant Open Educational Resources (OERs).">
+  <meta name="twitter:image" content="/static/images/logo.png">
 </head>
 <body>
-<header class="site-header">
-<div class="header-flex">
-<img alt="Site Logo" class="site-logo" src="../images/logo.png"/>
-<div class="header-titles">
-<h1 class="site-title">OER-Forge: Documentation</h1>
-<h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
-</div>
-<!-- Theme toggle button moved to main content container in baseof.html -->
-</div>
-<nav aria-label="Main menu" class="site-nav" role="navigation">
-<ul class="nav-menu">
-<li><a href="../index.html">Home</a></li>
-<li><a href="../news-roll/index.html">News</a></li>
-<li><a href="../sample-resources/index.html">Example</a></li>
-<li><a href="index.html">Docs</a></li>
-<li><a href="../about/index.html">About</a></li>
-</ul>
-</nav>
+  <header class="site-header">
+  <div class="header-flex">
+    <img src="../images/logo.png" alt="Site Logo" class="site-logo" />
+    <div class="header-titles">
+      <h1 class="site-title">OER-Forge: Documentation</h1>
+      <h2 class="site-subtitle">An open source platform for building and sharing open educational resources.</h2>
+    </div>
+    <!-- Theme toggle button moved to main content container in baseof.html -->
+  </div>
+  <nav class="site-nav" role="navigation" aria-label="Main menu">
+    <ul class="nav-menu">
+      
+        <li><a href="../index.html">Home</a></li>
+      
+        <li><a href="../news-roll/index.html">News</a></li>
+      
+        <li><a href="../sample-resources/index.html">Example</a></li>
+      
+        <li><a href="index.html">Docs</a></li>
+      
+        <li><a href="../about/index.html">About</a></li>
+      
+    </ul>
+  </nav>
 </header>
-<main id="main-content" tabindex="-1">
-<div class="container">
-<button aria-label="Switch theme" class="theme-toggle" id="theme-toggle">🌙
+  <main id="main-content" tabindex="-1">
+    <div class="container">
+      <button id="theme-toggle" aria-label="Switch theme" class="theme-toggle">🌙
         <span class="visually-hidden">Toggle dark/light theme</span>
-</button>
-<span id="accessibility-report-placeholder"></span><a aria-label="View Accessibility Report" class="wcag-badge wcag-badge-error" data-accessibility-report-btn="1" href="wcag_report_oerforge.db_utils.html"><img alt="WCAG WCAG22AAA Conformance Logo" src="https://www.w3.org/WAI/WCAG22/wcag2.2AAA-blue.svg" style="height:2em;vertical-align:middle;"/></a>
-<article>
-<nav aria-label="Download options" class="download-nav" role="navigation">
-<a aria-label="Download as PDF" class="download-btn theme-download-pdf" href="../files/documentation/oerforge.db_utils.pdf" role="button">
+      </button>
+      <span id="accessibility-report-placeholder"></span>
+      
+  <article>
+    
+    <nav class="download-nav" role="navigation" aria-label="Download options">
+      
+        <a href="../files/documentation/oerforge.db_utils.pdf"
+           class="download-btn theme-download-pdf"
+           role="button"
+           aria-label="Download as PDF">
           PDF
         </a>
-<a aria-label="Download as Word" class="download-btn theme-download-docx" href="../files/documentation/oerforge.db_utils.docx" role="button">
+      
+        <a href="../files/documentation/oerforge.db_utils.docx"
+           class="download-btn theme-download-docx"
+           role="button"
+           aria-label="Download as Word">
           Word
         </a>
-<a aria-label="Download as LaTeX" class="download-btn theme-download-tex" href="../files/documentation/oerforge.db_utils.tex" role="button">
+      
+        <a href="../files/documentation/oerforge.db_utils.tex"
+           class="download-btn theme-download-tex"
+           role="button"
+           aria-label="Download as LaTeX">
           LaTeX
         </a>
-<a aria-label="Download as Markdown" class="download-btn theme-download-md" href="../files/documentation/oerforge.db_utils.md" role="button">
+      
+        <a href="../files/documentation/oerforge.db_utils.md"
+           class="download-btn theme-download-md"
+           role="button"
+           aria-label="Download as Markdown">
           Markdown
         </a>
-<a aria-label="Download as Plain Text" class="download-btn theme-download-txt" href="../files/documentation/oerforge.db_utils.txt" role="button">
+      
+        <a href="../files/documentation/oerforge.db_utils.txt"
+           class="download-btn theme-download-txt"
+           role="button"
+           aria-label="Download as Plain Text">
           Plain Text
         </a>
-</nav>
-<h1>db_utils.py — OER-Forge Database Utilities</h1>
-<p>Database utilities for OERForge: initialization, asset tracking, page-file relationships, site metadata, and general-purpose queries for SQLite.</p>
-<hr/>
+      
+    </nav>
+    
+    <h1>db_utils.py — OER-Forge Database Utilities</h1>
+    
+    <p>Database utilities for OERForge: initialization, asset tracking, page-file relationships, site metadata, and general-purpose queries for SQLite.</p>
+<hr />
 <h2>Overview</h2>
 <p><code>oerforge.db_utils</code> provides a set of functions to manage and interact with the SQLite database used in the OERForge project. It supports schema setup, record insertion and fetching, asset linking, conversion tracking, and pretty-printing for debugging. Designed for contributors and users who need to extend or inspect the database layer.</p>
-<hr/>
+<hr />
 <h2>Functions</h2>
 <h3>initialize_database</h3>
 <pre><code class="language-python">def initialize_database()
 </code></pre>
 <p>Initialize the database schema, create all required tables, and insert default conversion capabilities.</p>
-<hr/>
+<hr />
 <h3>set_relative_link</h3>
 <pre><code class="language-python">def set_relative_link(content_id, relative_link, db_path=None)
 </code></pre>
@@ -81,7 +124,7 @@
 <li role="listitem"><code>relative_link</code> (str): Relative link to set.</li>
 <li role="listitem"><code>db_path</code> (str, optional): Path to the database file.</li>
 </ul>
-<hr/>
+<hr />
 <h3>set_menu_context</h3>
 <pre><code class="language-python">def set_menu_context(content_id, menu_context, db_path=None)
 </code></pre>
@@ -92,7 +135,7 @@
 <li role="listitem"><code>menu_context</code> (str): Menu context value.</li>
 <li role="listitem"><code>db_path</code> (str, optional): Path to the database file.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_menu_items</h3>
 <pre><code class="language-python">def get_menu_items(db_path=None)
 </code></pre>
@@ -105,7 +148,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of menu item dictionaries.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_db_connection</h3>
 <pre><code class="language-python">def get_db_connection(db_path=None)
 </code></pre>
@@ -118,7 +161,7 @@
 <ul role="list">
 <li role="listitem"><code>sqlite3.Connection</code>: Connection object.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_records</h3>
 <pre><code class="language-python">def get_records(table_name, where_clause=None, params=None, db_path=None, conn=None, cursor=None)
 </code></pre>
@@ -135,7 +178,7 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of records as dictionaries.</li>
 </ul>
-<hr/>
+<hr />
 <h3>insert_records</h3>
 <pre><code class="language-python">def insert_records(table_name, records, db_path=None, conn=None, cursor=None)
 </code></pre>
@@ -151,7 +194,7 @@
 <ul role="list">
 <li role="listitem"><code>list[int]</code>: List of inserted row IDs.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_enabled_conversions</h3>
 <pre><code class="language-python">def get_enabled_conversions(source_format, db_path=None)
 </code></pre>
@@ -165,7 +208,7 @@
 <ul role="list">
 <li role="listitem"><code>list[str]</code>: List of enabled target formats.</li>
 </ul>
-<hr/>
+<hr />
 <h3>pretty_print_table</h3>
 <pre><code class="language-python">def pretty_print_table(table_name, db_path=None, conn=None, cursor=None)
 </code></pre>
@@ -176,17 +219,17 @@
 <li role="listitem"><code>db_path</code> (str, optional): Path to the database file.</li>
 <li role="listitem"><code>conn</code>, <code>cursor</code>: Optional existing connection/cursor.</li>
 </ul>
-<hr/>
+<hr />
 <h3>log_event</h3>
-<pre><code class="language-python">def log_event(message, level="INFO")
+<pre><code class="language-python">def log_event(message, level=&quot;INFO&quot;)
 </code></pre>
 <p>Log an event to both stdout and a log file in the project root.</p>
 <p><strong>Parameters</strong></p>
 <ul role="list">
 <li role="listitem"><code>message</code> (str): Log message.</li>
-<li role="listitem"><code>level</code> (str): Severity level ("INFO", "ERROR", etc.).</li>
+<li role="listitem"><code>level</code> (str): Severity level (&quot;INFO&quot;, &quot;ERROR&quot;, etc.).</li>
 </ul>
-<hr/>
+<hr />
 <h3>link_files_to_pages</h3>
 <pre><code class="language-python">def link_files_to_pages(file_page_pairs, db_path=None, conn=None, cursor=None)
 </code></pre>
@@ -197,7 +240,7 @@
 <li role="listitem"><code>db_path</code> (str, optional): Path to the database file.</li>
 <li role="listitem"><code>conn</code>, <code>cursor</code>: Optional existing connection/cursor.</li>
 </ul>
-<hr/>
+<hr />
 <h3>get_available_conversions_for_page</h3>
 <pre><code class="language-python">def get_available_conversions_for_page(output_path, db_path=None)
 </code></pre>
@@ -211,32 +254,34 @@
 <ul role="list">
 <li role="listitem"><code>list[dict]</code>: List of dicts with <code>target_format</code>, <code>output_path</code>, and <code>status</code>.</li>
 </ul>
-<hr/>
+<hr />
 <h2>Usage Example</h2>
 <pre><code class="language-python">from oerforge import db_utils
 conn = db_utils.get_db_connection()
 db_utils.pretty_print_table('content', conn=conn)
 </code></pre>
-<hr/>
+<hr />
 <h2>Requirements</h2>
 <ul role="list">
 <li role="listitem">Python 3.7+</li>
 <li role="listitem">SQLite3</li>
 </ul>
-<hr/>
+<hr />
 <h2>See Also</h2>
 <ul role="list">
 <li role="listitem"><a href="https://sqlite.org/docs.html">SQLite Documentation</a></li>
 </ul>
-<hr/>
+<hr />
 <h2>License</h2>
 <p>See <code>LICENSE</code> in the project root.</p>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</article>
-</div>
-</main>
-<footer>
+  </article>
+
+    </div>
+  </main>
+  <footer>
   Made with tons of ☕️  and lots of ❤️ for students and educators everywhere. | Built with <a href="https://github.com/OER-Forge/">OER Forge</a>
+
 </footer>
 </body>
 </html>
