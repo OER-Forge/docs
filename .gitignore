@@ -1,6 +1,55 @@
-#### 
-*
-
 ###
 !.gitignore
-!/docs
+!README.md
+!LICENSE
+!requirements.txt
+!docs/
+
+# OER-Forge files
+build.py
+pa11y.py
+
+# OER-Forge directories
+build/
+content/
+db/
+layouts/
+log/
+oerforge/
+oerforge_admin/
+pa11y-config/
+static/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# VSCode
+.vscode/
+.history/
+.settings/
