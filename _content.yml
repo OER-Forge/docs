@@ -1,9 +1,9 @@
 # Site-wide content and organization
 site:
-  title: "Open Physics Education Network"
+  title: "OER-Forge: Documentation"
   author: "Danny Caballero"
-  subtitle: "Open, accessible, and community-driven physics education."
-  description: "Open Physics Education - News, resources, and community."
+  subtitle: "An open source platform for building and sharing open educational resources."
+  description: "An open source platform for building and sharing open educational resources."
   logo: "static/images/logo.png"
   favicon: "static/images/favicon.ico"
   theme:
@@ -11,7 +11,7 @@ site:
     light: light
     dark: dark
   language: "en"
-  github_url: "https://github.com/open-physics-ed-org/oer-forge"
+  github_url: "https://github.com/oer-forge/docs"
 
 footer:
   text: |
